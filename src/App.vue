@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/login">Login Page</router-link> |
     <router-link to="/password-recover">Password Recover</router-link> |
-    <router-link to="/get-pro">Get Pro</router-link>
+    <router-link to="/get-pro">Get Pro</router-link> |
+    <router-link to="/ui-library">UI Library</router-link>
   </div>
   <router-view />
 </template>

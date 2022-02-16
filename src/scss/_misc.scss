@@ -1,0 +1,11 @@
+@each $name, $size in $border-radius-sizes {
+  .border-#{$name} {
+    border-radius: #{$size}px;
+  }
+}
+
+@each $lineHeightName, $height in $line-heights {
+  .line-#{$lineHeightName} {
+    line-height: $height;
+  }
+}
