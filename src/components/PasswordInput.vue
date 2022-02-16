@@ -5,20 +5,20 @@
     @click="focus">
     <div class="row">
       <div class="col-1">
-      <div class="svg-icon-contacts-primary" 
-      :class="{'svg-icon-contacts-error': !valid }">
+      <div class="svg-icon-lock-primary" 
+      :class="{'svg-icon-lock-error': !valid }">
       </div>
       </div>
       <div class="col-11 line-s">
         <input 
           class="font-primary font-m-m"
           :class="{'font-error': !valid }"
-          ref="emailInput" 
-          type="email" 
-          name="email"
-          placeholder="example@email.com"
-          v-model="email"
-          @change="emitEmail">
+          ref="passwordInput" 
+          type="password" 
+          name="password"
+          placeholder="password"
+          v-model="password"
+          @change="emitPasswordInput">
       </div>
     </div>
   </div>
@@ -26,31 +26,25 @@
 
 <script>
 export default {
-  name: 'EmailInput',
+  name: 'PasswordInput',
   data() {
     return {
       valid: true,
-      email: ''
+      password: ''
     }
   },
   methods: {
     focus() {
-      this.$refs.emailInput.focus();
+      this.$refs.passwordInput.focus();
     },
-    emitEmail() {
-
-      if (!this.email) {
+    emitPasswordInput() {
+      if (!this.password || this.password.length < 6) {
         this.valid = false;
         this.$emit('emit', { value: '', valid: false });
       }
-      //eslint-disable-next-line
-      else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email)) {
-        this.valid = true;
-        this.$emit('emit', { value: this.email, valid: true });
-      }
       else {
-        this.valid = false;
-        this.$emit('emit', { value: this.email, valid: false });
+        this.valid = true;
+        this.$emit('emit', { value: this.password, valid: true });
       }
     }
 

@@ -10,7 +10,15 @@
         <h2 class="font-secondary font-left">Email Input</h2>
       </div>
       <div class="col-12">
-        <EmailInput @emitEmail="handleEmitEmail"/>
+        <EmailInput @emit="handleEmit"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2 class="font-secondary font-left">Password Input</h2>
+      </div>
+      <div class="col-12">
+        <PasswordInput @emit="handleEmit"/>
       </div>
     </div>
   </div>
@@ -18,12 +26,18 @@
 
 <script>
 import EmailInput from '@/components/EmailInput'
+import PasswordInput from '@/components/PasswordInput'
+
 
 export default {
   components: {
-    EmailInput
+    EmailInput,
+    PasswordInput
   },
   methods: {
+    handleEmit(e){
+      console.log(e);
+    }
   }
 }
 </script>
