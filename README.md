@@ -1,4 +1,4 @@
-# railsware
+# Railsware Project
 
 ## Project setup
 ```
