@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 $colors: (
   primary: #1A4F8B,
   secondary: #BF1541,
@@ -7,8 +9,26 @@ $colors: (
   dark: #000000,
   normal-gray: #B0B0B0,
   light-gray: #C3C3C3,
-  dark-gray: #767676
+  dark-gray: #767676,
+  error: #b32218,
+  success: #469617
 );
+
+$primary-color: map-get($colors, 'primary');
+$secondary-color: map-get($colors, 'secondary');
+$facebook-color: map-get($colors, 'facebook');
+$google-color: map-get($colors, 'google');
+$light-color: map-get($colors, 'light');
+$dark-color: map-get($colors, 'dark');
+$normal-gray-color: map-get($colors, 'normal-gray');
+$light-gray-color: map-get($colors, 'light-gray');
+$dark-gray-color: map-get($colors, 'dark-gray');
+$error-color: map-get($colors, 'error');
+$success-color: map-get($colors, 'success');
+
+
+$fast-transition: .2s;
+
 
 $spaccings: (
   xxl: 50,
@@ -18,8 +38,11 @@ $spaccings: (
   xm: 15,
   s: 12,
   xs: 10,
-  xxs: 5
+  xxs: 5,
+  none: 0
 );
+
+$icon-size: 25px;
 
 $line-heights: (
   xl: 42.19px,
@@ -28,12 +51,25 @@ $line-heights: (
   s: 16px,
 );
 
-$icon-size: 25px;
+$font-family: 'Roboto', sans-serif;
 
 $font-sizes: (
   l: 36px,
   m: 16px,
   s: 14px
+);
+
+$font-weights: (
+  l: 700,
+  m: 400,
+  s: 300
+);
+
+$border-radius-sizes: (
+  s: 5,
+  m: 10,
+  l: 30,
+  xl: 100
 );
 
 $svgs: (
