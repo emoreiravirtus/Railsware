@@ -5,6 +5,10 @@
 
   .font-#{$name} {
     color: $color;
+
+    &::placeholder {
+      color: $color;
+    }
   }
 
   .border-#{$name} {
