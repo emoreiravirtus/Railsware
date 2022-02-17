@@ -9,6 +9,10 @@ p, h1 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .font-error {
   color: $error-color;
 }
@@ -29,6 +33,11 @@ p, h1 {
     map-get($line-heights, 'xl'),
     map-get($font-weights, 'l')
     );
+    background: $primary-color;
+    background: linear-gradient(90deg, darken($primary-color, 5), $primary-color, lighten($primary-color, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include text-shadow();
 }
 
 .font-info {

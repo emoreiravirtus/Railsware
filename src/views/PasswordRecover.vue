@@ -22,7 +22,12 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="font-info font-center">Already have an account? <span class="font-link">Login here</span></p>
+        <p class="font-info font-center">
+          Already have an account?
+          <router-link to="/login">
+            <span  class="font-link">Login here</span>
+          </router-link>
+        </p>
       </div>
     </div>
   </div>
@@ -41,6 +46,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  animation: .5s appear;
+}
+
 .svg-illustration-password-recover {
   width: 212px;
   height: 212px;

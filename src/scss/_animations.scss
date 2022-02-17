@@ -1,0 +1,11 @@
+@keyframes appear {
+  0%{ opacity: 0; transform: translateX(-500px); }
+  100%{ opacity: 1; transform: translateX(0); }
+}
+
+@keyframes impact {
+  0%{ transform: rotate(0deg) scale(1); }
+  40%{ transform: rotate(-3.4deg) scale(.9); }
+  60%{ transform: rotate(3.4deg) scale(.9); }
+  100%{ transform: rotate(0deg) scale(1); }
+}

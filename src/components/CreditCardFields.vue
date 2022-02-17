@@ -152,6 +152,7 @@ export default {
         transition: $fast-transition;
         visibility: hidden;
         z-index: 3;
+        @include box-shadow();
 
         &::after {
           content: "";

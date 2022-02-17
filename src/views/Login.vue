@@ -20,7 +20,7 @@
         <PasswordInput/>
       </div>
       <div class="col-12 mt-xs items-right">
-        <p class="font-link">Forgot Password?</p>
+        <router-link to="/password-recover"><p class="font-link">Forgot Password?</p></router-link>
       </div>
     </div>
     <div class="row mb-xxl">
@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  animation: .5s appear;
+}
 .svg-illustration-login {
   width: 212px;
   height: 212px;
