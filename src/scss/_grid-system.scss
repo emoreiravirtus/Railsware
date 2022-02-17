@@ -5,6 +5,16 @@
   &--fluid {
     margin: 0;
     max-width: 100%;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @each $modifier , $breakpoint in $map-grid-props {
+        @include create-col-classes($modifier, $grid-cols, $breakpoint);
+      }
+    }
   }
 
   .row {
