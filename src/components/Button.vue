@@ -1,5 +1,5 @@
 <template>
-  <div id="button" ref="buttonC" class="container border-s" @click="emitAction">
+  <div id="button" ref="buttonC" class="container border-s pointer" @click="emitAction">
     <p ref="buttonP" class="line-l font-center font-m-m">{{ actionText }}</p>
   </div>
 </template>
@@ -57,7 +57,6 @@ export default {
 <style scoped lang="scss">
   #button {
     max-width: 344px;
-    cursor: pointer;
     transition: $fast-transition;
     @include box-shadow();
 
