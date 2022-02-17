@@ -1,34 +1,26 @@
-# Railsware Project
 
-## Project setup
-```
-npm install
-```
+# Railsware
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Check the result [HERE](https://emoreiravirtus.github.io/Railsware)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+A Project made using [this Figma Prototype](https://www.figma.com/file/WNj8uTxCBuG6BBuDyJrTrf/Frontend-RPI)
 
-### Run your unit tests
-```
-npm run test:unit
+## To run the project locally:
+
+
+
+Install dependencies:
+
+```bash
+  npm install
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
+
+Run it locally:
+
+```bash
+  npm run serve
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Go to [localhost:8080](http://localhost:8080/) :)
+    
