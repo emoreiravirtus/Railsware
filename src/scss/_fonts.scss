@@ -24,6 +24,11 @@ a {
     map-get($line-heights, 'm'),
     map-get($font-weights, 'm')
     );
+  transition: $fast-transition;
+
+  &:hover {
+    color: lighten($primary-color, 20);
+  }
 }
 
 .font-title {
@@ -34,7 +39,7 @@ a {
     map-get($font-weights, 'l')
     );
     background: $primary-color;
-    background: linear-gradient(90deg, darken($primary-color, 5), $primary-color, lighten($primary-color, 20));
+    background: linear-gradient(90deg, darken($primary-color, 10), lighten($primary-color, 5), lighten($primary-color, 10));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include text-shadow();

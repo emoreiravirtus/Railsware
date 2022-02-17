@@ -84,9 +84,9 @@ export default {
     width: 77px;
     height: 42px;
     top: 25px;
-    border-radius: 4px;
+    border-radius: 20px;
     left: calc(284px / 5);
-    background: linear-gradient(90deg, darken($primary-color, 5), $primary-color, lighten($primary-color, 20));
+    background: linear-gradient(90deg, darken($primary-color, 10), lighten($primary-color, 5), lighten($primary-color, 10));
     transition: 1s;
     opacity: 0;
     animation: none;

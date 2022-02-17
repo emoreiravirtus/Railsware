@@ -1,6 +1,6 @@
 @each $name, $color in $colors {
   .bg-#{$name} {
-    background-color: $color;
+    background: linear-gradient(90deg, darken($color, 10), lighten($color, 5), lighten($color, 10));
   }
 
   .font-#{$name} {
