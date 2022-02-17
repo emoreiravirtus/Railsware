@@ -5,6 +5,10 @@ body {
   font-size: map-get($font-sizes, s);
 }
 
+p {
+  margin: 0;
+}
+
 .font-center {
   text-align: center;
   vertical-align: center;
@@ -22,4 +26,8 @@ body {
       }
     }
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
