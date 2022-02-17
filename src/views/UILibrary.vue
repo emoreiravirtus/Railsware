@@ -39,17 +39,19 @@
           :actionText="'Upgrade'"
           @clicked="handleEmit"/>
       </div>
-      <div class="col-6 mt-s">
-        <Button 
-          :backgroundColor="'google'"
-          :actionText="'Google'"
-          @clicked="handleEmit"/>
-      </div>
-      <div class="col-6 mt-s">
-        <Button 
-          :backgroundColor="'facebook'"
-          :actionText="'Facebook'"
-          @clicked="handleEmit"/>
+      <div class="row">
+        <div class="col-6 mt-s">
+          <Button 
+            :backgroundColor="'google'"
+            :actionText="'Google'"
+            @clicked="handleEmit"/>
+        </div>
+        <div class="col-6 mt-s">
+          <Button 
+            :backgroundColor="'facebook'"
+            :actionText="'Facebook'"
+            @clicked="handleEmit"/>
+        </div>
       </div>
     </div>
     <div class="row">

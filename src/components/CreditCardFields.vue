@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <div class="container--fluid">
     <div class="row mb-xl">
       <div class="col-12">
           <div 
-            class="container p-m border-primary border-s"
+            class="container--fluid p-m border-primary border-s"
             @click="focusCardNumber">
             <div class="row">
               <div class="col-12 line-s">
@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col-5">
         <div 
-          class="container p-m border-primary border-s"
+          class="container--fluid p-m border-primary border-s"
           @click="focusExpiration">
           <div class="row">
             <div class="col-12 line-s">
@@ -43,7 +43,7 @@
       </div>
       <div class="col-5 col-offset-2">
         <div 
-          class="container p-m border-primary border-s"
+          class="container--fluid p-m border-primary border-s"
           @click="focusCvv">
           <div class="row">
             <div class="col-12 line-s">
@@ -63,14 +63,14 @@
     </div>
     <div id="cvvInfo" class="row mt-xxs items-right mb-s">
       <p class="font-dark-gray pointer">What's this?</p>
-      <div id="cvvInfo-pop-over" class="bg-secondary p-s border-l">
+      <div id="cvvInfo-pop-over" class="bg-primary p-s border-l">
         <p class="font-light">The 3 numbers behind your credit card.</p>
       </div>
     </div>
-    <div class="row mb-xl">
+    <div class="row">
       <div class="col-12">
           <div 
-            class="container p-m border-primary border-s"
+            class="container--fluid p-m border-primary border-s"
             @click="focusZip">
             <div class="row">
               <div class="col-12 line-s">
@@ -133,10 +133,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .container {
-    .container {
-      max-width: 344px;
-    }
+  .container--fluid {
 
     #cvvInfo {
       position: relative;
@@ -161,7 +158,7 @@ export default {
           display: inline-block;
           width: 10px;
           height: 10px;
-          background-color: #BF1541;
+          background-color: $primary-color;
           position: absolute;
           right: 25px;
           top: -3px;
@@ -176,9 +173,8 @@ export default {
     transition: $fast-transition;
 
     &:focus-visible {
-      transform: translateX(17px);
+      transform: translateX(-15px);
       outline: none;
-      width: calc(100% - (20px * 2));
     }
 
     &::placeholder {

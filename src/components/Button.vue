@@ -1,5 +1,5 @@
 <template>
-  <div id="button" ref="buttonC" class="container border-s pointer" @click="emitAction">
+  <div id="button" ref="buttonC" class="container--fluid border-s pointer" @click="emitAction">
     <p ref="buttonP" class="line-l font-center font-m-m">{{ actionText }}</p>
   </div>
 </template>
@@ -43,7 +43,6 @@ export default {
     }
     else {
       this.$refs.buttonC.classList.add('p-s');
-      this.$refs.buttonC.classList.add('small-button');
     }
   },
   methods: {
@@ -56,7 +55,6 @@ export default {
 
 <style scoped lang="scss">
   #button {
-    max-width: 344px;
     transition: $fast-transition;
     @include box-shadow();
 
@@ -70,11 +68,6 @@ export default {
     &:active {
         transform: scale(0.8);
     }
-
-    &.small-button {
-    max-width: 165px;
-  }
-
   }
   p {
     transition: $fast-transition;

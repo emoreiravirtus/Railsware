@@ -5,8 +5,39 @@ body {
   font-size: map-get($font-sizes, s);
 }
 
-p {
+p, h1 {
   margin: 0;
+}
+
+.font-error {
+  color: $error-color;
+}
+
+.font-link {
+  @include font-factory(
+    map-get($font-sizes, 'm'),
+    $primary-color,
+    map-get($line-heights, 'm'),
+    map-get($font-weights, 'm')
+    );
+}
+
+.font-title {
+  @include font-factory(
+    map-get($font-sizes, 'l'),
+    $dark-color,
+    map-get($line-heights, 'xl'),
+    map-get($font-weights, 'l')
+    );
+}
+
+.font-info {
+  @include font-factory(
+    map-get($font-sizes, 'm'),
+    $normal-gray-color,
+    map-get($line-heights, 'm'),
+    map-get($font-weights, 's')
+    );
 }
 
 .font-center {

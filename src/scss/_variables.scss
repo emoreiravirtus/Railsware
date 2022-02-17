@@ -29,8 +29,11 @@ $success-color: map-get($colors, 'success');
 
 $fast-transition: .2s;
 
+$containers-max-width: 344px;
+
 
 $spaccings: (
+  ul: 200,
   xxl: 50,
   xl: 36,
   l: 29,
