@@ -64,6 +64,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+@mixin text-shadow() {
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
 @mixin font-factory($s, $c, $lh, $w) {
   font-size: $s;
   color: $c;

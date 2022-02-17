@@ -4,12 +4,12 @@
     :class="{'border-error': !valid }"
     @click="focus">
     <div class="row">
-      <div class="col-1">
+      <div class="col-sm-1">
       <div class="svg-icon-contacts-primary" 
       :class="{'svg-icon-contacts-error': !valid }">
       </div>
       </div>
-      <div class="col-11 line-s">
+      <div class="col-10 col-sm-11 line-s">
         <input 
           class="font-primary font-m-m"
           :class="{'font-error': !valid }"

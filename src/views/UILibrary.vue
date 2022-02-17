@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="font-primary font-center font-l-l line-xl">Ui Library</h1>
-        <h2 class="font-primary font-center font-l-l line-xl">Components</h2>
+        <h1 class="font-title font-center">Ui Library</h1>
+        <h2 class="font-title font-center">Components</h2>
       </div>
     </div>
     <div class="row">
@@ -86,6 +86,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+* {
+  animation: .5s appear;
+}
 </style>

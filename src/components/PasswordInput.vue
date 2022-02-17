@@ -9,7 +9,7 @@
       :class="{'svg-icon-lock-error': !valid }">
       </div>
       </div>
-      <div class="col-11 line-s">
+      <div class="col-10 col-sm-11 line-s">
         <input 
           class="font-primary font-m-m"
           :class="{'font-error': !valid }"

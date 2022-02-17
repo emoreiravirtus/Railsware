@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  animation: .5s appear;
+}
+
 .svg-illustration-get-pro {
   width: 284px;
   height: 171px;
