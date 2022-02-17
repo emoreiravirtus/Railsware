@@ -1,6 +1,6 @@
 <template>
-  <div 
-    class="container p-m border-primary border-s"
+  <div
+    class="container--fluid p-m border-primary border-s"
     :class="{'border-error': !valid }"
     @click="focus">
     <div class="row">
@@ -59,9 +59,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .container {
-    max-width: 344px;
-  }
   input {
     border: none;
     width: 100%;

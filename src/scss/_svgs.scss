@@ -5,3 +5,10 @@
     }
   }
 }
+
+@each $svgName, $path in $svgs {
+    .svg-#{$svgName} {
+      background-image: url($path);
+      background-size: cover;
+    }
+}
