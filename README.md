@@ -7,9 +7,18 @@ A Project made using [this Figma Prototype](https://www.figma.com/file/WNj8uTxCB
 
 ## To run the project locally:
 
+Clone the project:
 
+```bash
+  git clone https://github.com/emoreiravirtus/Railsware.git
+```
 
-Install dependencies:
+Move to the project folder:
+```bash
+  cd railsware
+```
+
+Install the dependencies:
 
 ```bash
   npm install
