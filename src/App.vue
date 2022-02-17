@@ -28,9 +28,4 @@
 
 <style lang="scss">
 @import '@/scss/styles.scss';
-
-#nav {
-  position: fixed;
-  top: 15px;
-}
 </style>
