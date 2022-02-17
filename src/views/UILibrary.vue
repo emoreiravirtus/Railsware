@@ -3,11 +3,12 @@
     <div class="row">
       <div class="col-12">
         <h1 class="font-primary font-center font-l-l line-xl">Ui Library</h1>
+        <h2 class="font-primary font-center font-l-l line-xl">Components</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <h2 class="font-secondary font-center">Email Input</h2>
+        <h3 class="font-secondary font-center">Email Input</h3>
       </div>
       <div class="col-12">
         <EmailInput @emit="handleEmit"/>
@@ -15,7 +16,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <h2 class="font-secondary font-center">Password Input</h2>
+        <h3 class="font-secondary font-center">Password Input</h3>
       </div>
       <div class="col-12">
         <PasswordInput @emit="handleEmit"/>
@@ -23,7 +24,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <h2 class="font-secondary font-center">Buttons</h2>
+        <h3 class="font-secondary font-center">Buttons</h3>
       </div>
       <div class="col-12">
         <Button 
@@ -51,6 +52,14 @@
           @clicked="handleEmit"/>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <h3 class="font-secondary font-center">Credit Card Fields</h3>
+        <div class="row">
+          <CreditCardFields @emit="handleEmit"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,12 +67,14 @@
 import EmailInput from '@/components/EmailInput'
 import PasswordInput from '@/components/PasswordInput'
 import Button from '@/components/Button'
+import CreditCardFields from '@/components/CreditCardFields'
 
 export default {
   components: {
     EmailInput,
     PasswordInput,
-    Button
+    Button,
+    CreditCardFields
   },
   methods: {
     handleEmit(e){
